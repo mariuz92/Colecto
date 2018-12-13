@@ -6,9 +6,7 @@ let bodyParser = require('body-parser')
 let db_connection = require('./models/db_connection')
 let configure_routing = require('./routing');
 
-// app.get('/', function (req, res) {
-//   res.send('Hello World!');
-// });
+
 db_connection()
 app.use(bodyParser.json());
 configure_routing(app)
